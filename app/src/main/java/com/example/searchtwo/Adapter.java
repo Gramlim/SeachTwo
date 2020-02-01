@@ -33,27 +33,36 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     // binds the data to the TextView in each cell
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        //holder.myTextView.setText(mData[position]);
+//        holder.myTextView.setText(mData[position]);
         if (mData[position] == 1){
             holder.picture.setImageResource(R.drawable.bird);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 2){
             holder.picture.setImageResource(R.drawable.catthum);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 3){
             holder.picture.setImageResource(R.drawable.demon);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 4){
             holder.picture.setImageResource(R.drawable.knifeugroza);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 5){
             holder.picture.setImageResource(R.drawable.pinguin);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 6){
             holder.picture.setImageResource(R.drawable.poc);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 7){
             holder.picture.setImageResource(R.drawable.racoon);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }if (mData[position] == 8){
             holder.picture.setImageResource(R.drawable.svidetel);
+            holder.myTextView.setText(String.valueOf(mData[position]));
         }
-        else {
-            holder.picture.setImageResource(R.drawable.ic_launcher_foreground);
-        }
+//        else {
+//            holder.picture.setImageResource(R.drawable.ic_launcher_foreground);
+//            holder.myTextView.setText(String.valueOf(mData[position]));
+//        }
 
     }
 
